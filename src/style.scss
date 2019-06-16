@@ -1,0 +1,401 @@
+$top_bgc:rgb(62, 143, 127);
+$top_color: #ffffff;
+$color1: rgb(100, 62, 127);
+$color2: rgb(228, 255, 28);
+$color3: rgb(38, 99, 117);
+$color4: rgb(61, 204, 106);
+$color5: rgb(224, 216, 62);
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  left: 0.1px;
+
+/*    border: solid 2px red; */
+}
+html,body{
+  // background-color: #CD853F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:100%;
+  margin: 0;
+  font-size: 14px;
+  font-family:微軟正黑體;
+  font-weight: 700;
+}
+a{
+  color:initial;
+  text-decoration: initial;
+}
+
+.box{
+  height: 500px;
+  width:300px;
+  background-color: #fff;
+  box-shadow: 0px 0px 35px rgba(0,0,0,0.3);
+  transition: 0.5s
+}
+.box:hover {
+  box-shadow: 5px 5px 60px rgba(0,0,0,0.4);
+  transform: translate(-5px,-5px);
+}
+.top{
+  background-image: url(https://awenawang.github.io/money-heist/1539433293-341705603_n.png);
+  background-position:center;
+  background-size:cover;
+  height:330px;
+  position: relative;
+  transition:0.5s
+}
+.top .tag{
+  width: 25px;
+  height: 50px;
+  background-color: #CD853F;
+  float: right;
+  margin-right: 20px;
+}
+.top .name{
+  position: absolute;
+  left:0px;
+  bottom:0px;
+  padding: 5px 15px;
+  letter-spacing:2px;
+  color: white;
+  font-size:24px;
+  font-weight:300;
+  background: linear-gradient(transparent 0%,black 100%);
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom:15px;
+}
+.top .name .smallText{
+  font-size: 14px;
+}
+.cirbutton{
+  width:50px;
+  height:50px;
+  background-color:#CD853F;
+  border-radius:50%;
+  position: absolute;
+  right:30px;
+  bottom:-20px;
+}
+.bottom{
+  padding:10px 20px 20px 20px
+}
+.bottom li{
+  padding: 5px 0px
+}
+.bottom h3{
+  display:inline-block;
+}
+.bottom ul{
+  list-style: none;
+  padding-left: 0;
+}
+.buttons{
+  margin-top: 30px;
+}
+.buttons .btn{
+  display:inline-block;
+  padding:10px 25px;
+  letter-spacing:2px;
+}
+.btnWebsite{
+  background-color: #CD853F;
+  color: white;
+  transition:0.5s;
+}
+.btnWebsite:hover{
+  background-color: #CD853F;
+}
+.btnNews{
+  border: solid 1px black;
+  float: right;
+}
+.btnNews:hover{
+  background-color: #eee;
+}
+  
+  
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+html, body {
+  width: 100%;
+  height: 100%;
+  margin:0;
+  padding:0;
+  position: relative;
+  //border: solid 1px red;
+}
+body {
+  position: relative;
+  background-color: #fcf6ba;
+  box-sizing: border-box;
+  border-top: solid 30px #116584;
+  border-bottom: solid 30px #116584;
+  overflow: hidden;
+  
+}
+.Top {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background-color: $top_bgc;
+  color: $top_color;
+  border-radius: 30px 30px 225px 30px;
+  margin-top:-100px;
+  margin-left: -75px;
+  font-family: 'Anton', sans-serif;
+  h3 {
+  margin-left: 100px;
+  margin-top: 100px;
+  font-size: 25px;
+  width: 100px;
+  line-height: 60px;
+    span{
+    background-color: red;
+    font-size: 50px;
+    }
+  }
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  left: 100%;
+}
+
+.namecard {
+  position: fixed;
+  width: 250px;
+  height: 70px;
+  left: 85%;
+  top: 50%;
+  padding: 0px 20px 30px 20px;
+  overflow: hidden;
+  background-color: #3e6e7f;
+  color: #fff;
+  border: solid 1px rgba(0,0,0,0.15);
+  box-shadow: 20px 25px 15px -15px rgba(0,0,0,0.25);
+  border-radius: 10px;
+  font-family: 微軟正黑體;
+  transition: 0.5s;
+  hr {
+    border-color: #fff;
+    margin-top: -15px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  span {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.namecard:hover{
+  transform: translate(-50px,-50px);
+  box-shadow: -20px -25px 15px -15px rgba(0,0,0,0.5);
+}
+
+.allbub {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  z-index: -3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #333;
+    animation: back 8s infinite;
+  @keyframes falling {
+    0%,100% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+    }
+    0% {
+      transform: translate(100%, 0px);
+    }
+    100% {
+      transform: translate(0px, 100%);
+    }
+  }
+  [class*='bub'] {
+    background-color: #fff;
+    width: 3px;
+    height: 100px;
+    border-radius: 15px;
+    animation: falling 2s infinite;
+  }
+  @for $i from 1 through 20 {
+  .bub#{$i} {
+    $posX: random() *100%;
+     $posY: random() *-100%+90%;
+    position: absolute;
+    left: $posX;
+    top:$posY;
+    animation-delay: $i*-0.1s;
+  }
+}
+}
+
+@keyframes back {
+  0% {
+    background-color: $color1;
+  }
+  25% {
+    background-color: $color2;
+  }
+  50% {
+    background-color: $color3;
+  }
+  75%{
+    background-color: $color4;
+  }
+  100%{
+    background-color: $color5;
+  }
+  
+}
+
+
+
+@keyframes title {
+  0% {
+    margin-top: -200px;
+    margin-left: -300px;
+  }
+  50% {
+    margin-top: -75px;
+    margin-left: -50px;
+  }
+  100% {
+    margin-top: -100px;
+    margin-left: -75px;
+  }
+}
+
+.Top {
+            animation-name: title;
+            animation-duration: 1.5s;
+            animation-iteration-count:1;
+}
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+/*    border: solid 2px red; */
+}
+html,body{
+  // background-color: #CD853F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:100%;
+  margin: 0;
+  font-size: 14px;
+  font-family:微軟正黑體;
+  font-weight: 700;
+}
+a{
+  color:initial;
+  text-decoration: initial;
+}
+
+.box{
+  width:380px;
+  background-color: #fff;
+  box-shadow: 0px 0px 35px rgba(0,0,0,0.3);
+  transition: 0.5s
+}
+.box:hover {
+  box-shadow: 5px 5px 60px rgba(0,0,0,0.4);
+  transform: translate(-5px,-5px);
+}
+.top{
+  background-image: url(https://awenawang.github.io/money-heist/1539433293-341705603_n.png);
+  background-position:center;
+  background-size:cover;
+  height:330px;
+  position: relative;
+  transition:0.5s
+}
+.top .tag{
+  width: 25px;
+  height: 50px;
+  background-color: #CD853F;
+  float: right;
+  margin-right: 20px;
+}
+.top .name{
+  position: absolute;
+  left:0px;
+  bottom:0px;
+  padding: 5px 15px;
+  letter-spacing:2px;
+  color: white;
+  font-size:24px;
+  font-weight:300;
+  background: linear-gradient(transparent 0%,black 100%);
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom:15px;
+}
+.top .name .smallText{
+  font-size: 14px;
+}
+.cirbutton{
+  width:50px;
+  height:50px;
+  background-color:#CD853F;
+  border-radius:50%;
+  position: absolute;
+  right:30px;
+  bottom:-20px;
+}
+.bottom{
+  padding:10px 20px 20px 20px
+}
+.bottom li{
+  padding: 5px 0px
+}
+.bottom h3{
+  display:inline-block;
+}
+.bottom ul{
+  list-style: none;
+  padding-left: 0;
+}
+.buttons{
+  margin-top: 30px;
+}
+.buttons .btn{
+  display:inline-block;
+  padding:10px 25px;
+  letter-spacing:2px;
+}
+.btnWebsite{
+  background-color: #CD853F;
+  color: white;
+  transition:0.5s;
+}
+.btnWebsite:hover{
+  background-color: #CD853F;
+}
+.btnNews{
+  border: solid 1px black;
+  float: right;
+}
+.btnNews:hover{
+  background-color: #eee;
+}
